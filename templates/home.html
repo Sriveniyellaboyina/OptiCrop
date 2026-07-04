@@ -1,0 +1,392 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home | OptiCrop
+{% endblock %}
+
+{% block content %}
+
+<!-- ================= Hero Section ================= -->
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left -->
+
+            <div class="col-lg-6">
+
+                <h1 class="display-4 fw-bold">
+
+                    Smart Agricultural Production
+                    Optimization Engine
+
+                </h1>
+
+                <p class="lead mt-4">
+
+                    OptiCrop uses Machine Learning to recommend
+                    the most suitable crop based on soil nutrients
+                    and environmental conditions, helping farmers
+                    improve productivity and sustainability.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="/predict_page" class="btn btn-success btn-lg me-3">
+
+                        🌾 Find Your Crop
+
+                    </a>
+
+                    <a href="/about" class="btn btn-outline-success btn-lg">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="col-lg-6 text-center">
+
+                <img src="{{ url_for('static', filename='images/hero.jpg') }}"
+                     class="img-fluid hero-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Features ================= -->
+
+<section class="features">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Our Features
+
+</h2>
+
+<p>
+
+AI Powered Smart Agriculture Platform
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="feature-card">
+
+<div class="icon">
+
+🌱
+
+</div>
+
+<h4>
+
+Soil Analysis
+
+</h4>
+
+<p>
+
+Analyze Nitrogen,
+Phosphorous,
+Potassium,
+pH,
+and soil quality.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="feature-card">
+
+<div class="icon">
+
+🌦️
+
+</div>
+
+<h4>
+
+Climate Analysis
+
+</h4>
+
+<p>
+
+Uses Temperature,
+Humidity,
+and Rainfall
+for prediction.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="feature-card">
+
+<div class="icon">
+
+🤖
+
+</div>
+
+<h4>
+
+AI Prediction
+
+</h4>
+
+<p>
+
+Random Forest
+Machine Learning
+Model with
+99% Accuracy.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="feature-card">
+
+<div class="icon">
+
+🌾
+
+</div>
+
+<h4>
+
+Better Yield
+
+</h4>
+
+<p>
+
+Get intelligent
+crop recommendations
+for maximum
+productivity.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Why Choose ================= -->
+
+<section class="why-us">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<img src="{{ url_for('static', filename='images/about.jpg') }}"
+
+class="img-fluid rounded shadow">
+
+</div>
+
+<div class="col-lg-6">
+
+<h2>
+
+Why Choose OptiCrop?
+
+</h2>
+
+<p>
+
+OptiCrop is an intelligent agricultural recommendation system
+developed using Machine Learning techniques.
+
+It helps farmers identify the best crop suitable
+for their land by analyzing:
+
+</p>
+
+<ul>
+
+<li>✔ Soil Nutrients (N, P, K)</li>
+
+<li>✔ Temperature</li>
+
+<li>✔ Humidity</li>
+
+<li>✔ Soil pH</li>
+
+<li>✔ Rainfall</li>
+
+<li>✔ High Accuracy Prediction</li>
+
+</ul>
+
+<a href="/predict_page"
+
+class="btn btn-success">
+
+Start Prediction
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Statistics ================= -->
+
+<section class="statistics">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h1>
+
+2200+
+
+</h1>
+
+<p>
+
+Dataset Records
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1>
+
+22
+
+</h1>
+
+<p>
+
+Crop Types
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1>
+
+99.55%
+
+</h1>
+
+<p>
+
+Model Accuracy
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1>
+
+AI
+
+</h1>
+
+<p>
+
+Powered Prediction
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container text-center">
+
+<h2>
+
+Ready to Find the Best Crop?
+
+</h2>
+
+<p>
+
+Use our intelligent crop recommendation
+engine and improve your farming decisions.
+
+</p>
+
+<a href="/predict_page"
+
+class="btn btn-lg btn-success">
+
+🌿 Predict Now
+
+</a>
+
+</div>
+
+</section>
+
+{% endblock %}

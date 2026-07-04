@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+
+{% block title %}
+Find Your Crop | OptiCrop
+{% endblock %}
+
+{% block content %}
+
+<!-- ================= Banner ================= -->
+
+<section class="page-banner">
+
+    <div class="container text-center">
+
+        <h1>🌾 Find Your Crop</h1>
+
+        <p>
+
+            Enter your soil and environmental parameters to get the most suitable crop recommendation.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= Prediction Form ================= -->
+
+<section class="predict-section py-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="prediction-card">
+
+                    <h2 class="text-center text-success mb-4">
+
+                        Crop Recommendation Form
+
+                    </h2>
+
+                    <form action="/predict" method="POST">
+
+                        <div class="row">
+
+                            <!-- Nitrogen -->
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+
+                                    🌱 Nitrogen (N)
+
+                                </label>
+
+                                <input type="number"
+
+                                    class="form-control"
+
+                                    name="N"
+
+                                    min="0"
+
+                                    max="140"
+
+                                    step="any"
+
+                                    placeholder="Enter Nitrogen value"
+
+                                    required>
+
+                            </div>
+
+                            <!-- Phosphorous -->
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+
+                                    🌿 Phosphorous (P)
+
+                                </label>
+
+                                <input type="number"
+
+                                    class="form-control"
+
+                                    name="P"
+
+                                    min="0"
+
+                                    max="145"
+
+                                    step="any"
+
+                                    placeholder="Enter Phosphorous value"
+
+                                    required>
+
+                            </div>
+
+                            <!-- Potassium -->
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+
+                                    🍃 Potassium (K)
+
+                                </label>
+
+                                <input type="number"
+
+                                    class="form-control"
+
+                                    name="K"
+
+                                    min="0"
+
+                                    max="205"
+
+                                    step="any"
+
+                                    placeholder="Enter Potassium value"
+
+                                    required>
+
+                            </div>
+
+                            <!-- Temperature -->
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+
+                                    🌡 Temperature (°C)
+
+                                </label>
+
+                                <input type="number"
+
+                                    class="form-control"
+
+                                    name="temperature"
+
+                                    min="0"
+
+                                    max="50"
+
+                                    step="any"
+
+                                    placeholder="Enter Temperature"
+
+                                    required>
+
+                            </div>
+
+                            <!-- Humidity -->
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+
+                                    💧 Humidity (%)
+
+                                </label>
+
+                                <input type="number"
+
+                                    class="form-control"
+
+                                    name="humidity"
+
+                                    min="0"
+
+                                    max="100"
+
+                                    step="any"
+
+                                    placeholder="Enter Humidity"
+
+                                    required>
+
+                            </div>
+
+                            <!-- pH -->
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="form-label">
+
+                                    ⚗ Soil pH
+
+                                </label>
+
+                                <input type="number"
+
+                                    class="form-control"
+
+                                    name="ph"
+
+                                    min="0"
+
+                                    max="14"
+
+                                    step="0.1"
+
+                                    placeholder="Enter Soil pH"
+
+                                    required>
+
+                            </div>
+
+                            <!-- Rainfall -->
+
+                            <div class="col-md-12 mb-4">
+
+                                <label class="form-label">
+
+                                    🌧 Rainfall (mm)
+
+                                </label>
+
+                                <input type="number"
+
+                                    class="form-control"
+
+                                    name="rainfall"
+
+                                    min="0"
+
+                                    max="500"
+
+                                    step="any"
+
+                                    placeholder="Enter Rainfall"
+
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Submit Button -->
+
+                        <div class="text-center">
+
+                            <button type="submit"
+
+                                class="btn btn-success btn-lg px-5">
+
+                                🌾 Predict Crop
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Information Cards ================= -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+
+                <div class="info-card">
+
+                    <h3>🌱 Soil Nutrients</h3>
+
+                    <p>
+
+                        Nitrogen, Phosphorous, and Potassium
+                        are essential nutrients for healthy crop growth.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="info-card">
+
+                    <h3>🌦 Climate Factors</h3>
+
+                    <p>
+
+                        Temperature, Humidity,
+                        and Rainfall influence crop productivity.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="info-card">
+
+                    <h3>🤖 AI Prediction</h3>
+
+                    <p>
+
+                        Our Random Forest model
+                        predicts the most suitable crop
+                        with high accuracy.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

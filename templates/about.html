@@ -1,0 +1,558 @@
+{% extends "base.html" %}
+
+{% block title %}
+About | OptiCrop
+{% endblock %}
+
+{% block content %}
+
+<!-- ================= Banner ================= -->
+
+<section class="page-banner">
+
+    <div class="container text-center">
+
+        <h1>About OptiCrop</h1>
+
+        <p>
+            Smart Agricultural Production Optimization Engine
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= Project Overview ================= -->
+
+<section class="about-section py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<img src="{{ url_for('static', filename='images/about.jpg') }}"
+class="img-fluid rounded shadow">
+
+</div>
+
+<div class="col-lg-6">
+
+<h2 class="text-success mb-4">
+
+Project Overview
+
+</h2>
+
+<p>
+
+OptiCrop is an Artificial Intelligence based crop recommendation
+system developed to help farmers choose the most suitable crop
+based on soil nutrients and environmental conditions.
+
+</p>
+
+<p>
+
+The system analyzes important agricultural parameters such as
+Nitrogen (N), Phosphorous (P), Potassium (K), Temperature,
+Humidity, Soil pH, and Rainfall to predict the best crop for
+maximum productivity.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Objectives ================= -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<h2 class="text-center text-success mb-5">
+
+Project Objectives
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+<h4>🌱 Smart Prediction</h4>
+
+<p>
+
+Recommend the most suitable crop
+using Machine Learning algorithms.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+<h4>🌾 Sustainable Farming</h4>
+
+<p>
+
+Improve agricultural productivity
+while reducing resource wastage.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+<h4>📊 Data Driven Decisions</h4>
+
+<p>
+
+Help farmers make informed
+crop selection decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Technology ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center text-success mb-5">
+
+Technologies Used
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+🐍
+
+<h5>Python</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+📊
+
+<h5>Pandas</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+🤖
+
+<h5>Scikit-Learn</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+🌐
+
+<h5>Flask</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+📈
+
+<h5>NumPy</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+📉
+
+<h5>Matplotlib</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+🎨
+
+<h5>Bootstrap</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="tech-card">
+
+💻
+
+<h5>HTML & CSS</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Dataset ================= -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<h2 class="text-center text-success mb-5">
+
+Dataset Information
+
+</h2>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<table class="table table-bordered">
+
+<thead class="table-success">
+
+<tr>
+
+<th>Feature</th>
+
+<th>Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>N</td>
+
+<td>Nitrogen</td>
+
+</tr>
+
+<tr>
+
+<td>P</td>
+
+<td>Phosphorous</td>
+
+</tr>
+
+<tr>
+
+<td>K</td>
+
+<td>Potassium</td>
+
+</tr>
+
+<tr>
+
+<td>Temperature</td>
+
+<td>Temperature (°C)</td>
+
+</tr>
+
+<tr>
+
+<td>Humidity</td>
+
+<td>Humidity (%)</td>
+
+</tr>
+
+<tr>
+
+<td>pH</td>
+
+<td>Soil pH</td>
+
+</tr>
+
+<tr>
+
+<td>Rainfall</td>
+
+<td>Rainfall (mm)</td>
+
+</tr>
+
+<tr>
+
+<td>Label</td>
+
+<td>Recommended Crop</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="info-card h-100">
+
+<h4>Dataset Summary</h4>
+
+<ul>
+
+<li>✔ Total Records : 2200</li>
+
+<li>✔ Total Features : 8</li>
+
+<li>✔ Input Features : 7</li>
+
+<li>✔ Crop Classes : 22</li>
+
+<li>✔ Balanced Dataset</li>
+
+<li>✔ No Missing Values</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ML Workflow ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center text-success mb-5">
+
+Machine Learning Workflow
+
+</h2>
+
+<div class="workflow">
+
+<div class="step">
+
+Dataset
+
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+
+Preprocessing
+
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+
+Training
+
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+
+Random Forest
+
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+
+Prediction
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Advantages ================= -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<h2 class="text-center text-success mb-5">
+
+Advantages
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+🌱
+
+<h5>High Accuracy</h5>
+
+<p>
+
+Random Forest model
+achieved 99.55% accuracy.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+🌾
+
+<h5>Easy to Use</h5>
+
+<p>
+
+Simple web application
+for farmers and researchers.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+📈
+
+<h5>Better Productivity</h5>
+
+<p>
+
+Improves crop selection
+and farming efficiency.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta py-5">
+
+<div class="container text-center">
+
+<h2>
+
+Start Your Crop Prediction
+
+</h2>
+
+<p>
+
+Use AI-powered recommendations
+to identify the most suitable crop.
+
+</p>
+
+<a href="/predict_page" class="btn btn-success btn-lg">
+
+🌿 Find Your Crop
+
+</a>
+
+</div>
+
+</section>
+
+{% endblock %}
