@@ -462,21 +462,6 @@ http://127.0.0.1:5000
 
 ---
 
-# 👩‍💻 Team Members
-
-### Team Leader
-
-Sri Veni Yellaboyina
-
-### Team Members
-
-- Jaswanth Sai Ram Marrivada
-- Tinotenda Karl Mazura
-- Blessed Zambezi
-- Kushal Sai Kumar Antarvedi
-
----
-
 # ⭐ Conclusion
 
 OptiCrop is an intelligent crop recommendation system that leverages Machine Learning to assist farmers in making informed agricultural decisions.
