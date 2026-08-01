@@ -1,0 +1,383 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--================ ABOUT HERO =================-->
+
+<section class="about-hero">
+
+    <div class="about-content">
+
+        <div class="about-left">
+
+            <span class="hero-badge">
+
+                🌿 ABOUT OPTICROP 
+
+            </span>
+
+            <h1>
+
+                Empowering Agriculture
+
+                <span>Through Artificial Intelligence</span>
+
+            </h1>
+
+            <p>
+
+                Smart Agricultural Production Optimization Engine is a machine learning-based web application that recommends the most suitable crop based on soil nutrients and environmental conditions, helping farmers improve productivity, optimize resource utilization, and support sustainable agriculture.
+
+            </p>
+
+        </div>
+
+        <div class="about-right">
+
+            <img src="{{ url_for('static', filename='images/about.jpg') }}">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ MISSION =================-->
+<section class="mission-section">
+    <div class="section-title">
+        <span>OUR MISSION</span>
+        <h2>Building Smarter Agriculture</h2>
+    </div>
+
+    <div class="mission-grid">
+
+        <div class="mission-card">
+            <div class="mission-icon">
+                <i class="fas fa-crosshairs"></i>
+            </div>
+            <h3>Accurate Crop Prediction</h3>
+            <p>
+                Predict the most suitable crop using Machine Learning based on
+                soil nutrients and environmental conditions.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <div class="mission-icon">
+                <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Sustainable Agriculture</h3>
+            <p>
+                Encourage eco-friendly farming practices that improve productivity
+                while conserving natural resources.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <div class="mission-icon">
+                <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Support Farmers</h3>
+            <p>
+                Empower farmers with AI-powered recommendations for smarter,
+                faster, and more informed crop selection.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!--================ WORKFLOW =================-->
+
+<section class="workflow">
+
+    <div class="section-title">
+
+        <span>HOW IT WORKS</span>
+
+        <h2>AI Crop Recommendation Process</h2>
+
+        <p>
+            OptiCrop AI follows a simple four-step process to recommend
+            the best crop based on environmental and soil conditions.
+        </p>
+
+    </div>
+
+    <div class="workflow-grid">
+
+        <div class="workflow-card">
+
+            <div class="number">
+                <i class="fas fa-clipboard-list"></i>
+            </div>
+
+            <h3>Enter Soil Data</h3>
+
+            <p>
+                Provide Nitrogen, Phosphorus, Potassium, Temperature,
+                Humidity, pH and Rainfall.
+            </p>
+
+        </div>
+
+        <div class="workflow-card">
+
+            <div class="number">
+                <i class="fas fa-brain"></i>
+            </div>
+
+            <h3>Machine Learning</h3>
+
+            <p>
+                The trained model analyzes all parameters using
+                Machine Learning.
+            </p>
+
+        </div>
+
+        <div class="workflow-card">
+
+            <div class="number">
+                <i class="fas fa-chart-line"></i>
+            </div>
+
+            <h3>Prediction</h3>
+
+            <p>
+                AI predicts the most suitable crop for the
+                given conditions.
+            </p>
+
+        </div>
+
+        <div class="workflow-card">
+
+            <div class="number">
+                <i class="fas fa-tractor"></i>
+            </div>
+
+            <h3>Better Farming</h3>
+
+            <p>
+                Farmers receive recommendations for
+                improved productivity.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ DATASET =================-->
+
+<section class="dataset">
+
+    <div class="section-title">
+
+        <span>DATASET</span>
+
+        <h2>Dataset Information</h2>
+
+        <p>
+
+            OptiCrop AI is trained using a balanced agricultural dataset
+            containing soil nutrients and environmental parameters
+            to accurately recommend suitable crops.
+
+        </p>
+
+    </div>
+
+    <div class="dataset-container">
+
+        <!-- Left Table -->
+
+        <div class="dataset-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Feature</th>
+
+                        <th>Description</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr><td>N</td><td>Nitrogen</td></tr>
+
+                    <tr><td>P</td><td>Phosphorous</td></tr>
+
+                    <tr><td>K</td><td>Potassium</td></tr>
+
+                    <tr><td>Temperature</td><td>Temperature (°C)</td></tr>
+
+                    <tr><td>Humidity</td><td>Humidity (%)</td></tr>
+
+                    <tr><td>pH</td><td>Soil pH</td></tr>
+
+                    <tr><td>Rainfall</td><td>Rainfall (mm)</td></tr>
+
+                    <tr><td>Label</td><td>Recommended Crop</td></tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Right Card -->
+
+        <div class="dataset-summary">
+
+            <h3>Dataset Summary</h3>
+
+            <ul>
+
+                <li><span>✓</span>Total Records : 2200</li>
+
+                <li><span>✓</span> Total Features : 8</li>
+
+                <li><span>✓</span> Input Features : 7</li>
+
+                <li><span>✓</span> Crop Classes : 22</li>
+
+                <li><span>✓</span> Balanced Dataset</li>
+
+                <li><span>✓</span> No Missing Values</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ MACHINE LEARNING WORKFLOW =================-->
+
+<section class="ml-workflow">
+
+    <div class="section-title">
+
+        <span>WORKFLOW</span>
+
+        <h2>Machine Learning Workflow</h2>
+
+        <p>
+
+            OptiCrop AI follows a structured Machine Learning pipeline,
+            transforming agricultural data into accurate crop recommendations.
+
+        </p>
+
+    </div>
+
+    <div class="workflow-process">
+
+        <div class="step-box">
+
+            Dataset
+
+        </div>
+
+        <i class="fa-solid fa-arrow-right-long"></i>
+
+        <div class="step-box">
+
+            Preprocessing
+
+        </div>
+
+        <i class="fa-solid fa-arrow-right-long"></i>
+
+        <div class="step-box">
+
+            Training
+
+        </div>
+
+        <i class="fa-solid fa-arrow-right-long"></i>
+
+        <div class="step-box">
+
+            Random Forest
+
+        </div>
+
+        <i class="fa-solid fa-arrow-right-long"></i>
+
+        <div class="step-box">
+
+            Prediction
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ TECHNOLOGIES =================-->
+
+<section class="technology">
+
+    <div class="section-title">
+
+        <span>TECH STACK</span>
+
+        <h2>Technologies Used</h2>
+
+    </div>
+
+    <div class="tech-grid">
+
+    <div class="tech-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+    </div>
+
+    <div class="tech-card">
+        <i class="fas fa-globe"></i>
+        <h3>Flask</h3>
+    </div>
+
+    <div class="tech-card">
+        <i class="fas fa-robot"></i>
+        <h3>Scikit-Learn</h3>
+    </div>
+
+    <div class="tech-card">
+        <i class="fas fa-table"></i>
+        <h3>Pandas</h3>
+    </div>
+
+    <div class="tech-card">
+        <i class="fas fa-square-root-alt"></i>
+        <h3>NumPy</h3>
+    </div>
+
+    <div class="tech-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Matplotlib</h3>
+    </div>
+
+    <div class="tech-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+    </div>
+
+    <div class="tech-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+    </div>
+
+</div>
+</section>
+
+{% endblock %}

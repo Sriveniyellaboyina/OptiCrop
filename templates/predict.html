@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="predict-hero">
+
+    <div class="predict-container">
+
+        <!-- LEFT -->
+
+        <div class="predict-left">
+
+            <span class="hero-badge">
+
+                🌿 AI Prediction
+
+            </span>
+
+            <h1>
+
+                Find the Best Crop
+
+                <span>For Your Land</span>
+
+            </h1>
+
+            <p>
+
+                Enter your soil nutrients and environmental conditions.
+                Our Machine Learning model will recommend the most
+                suitable crop for cultivation.
+
+            </p>
+
+            <img src="{{ url_for('static', filename='images/predict.png') }}"
+                 class="predict-image">
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="predict-card">
+
+            <h2>Crop Recommendation</h2>
+
+            <form action="/predict" method="POST">
+
+    <div class="form-grid">
+
+        <div class="input-group">
+            <label>Nitrogen (N)</label>
+            <input type="number" name="Nitrogen" required>
+        </div>
+
+        <div class="input-group">
+            <label>Phosphorus (P)</label>
+            <input type="number" name="Phosphorus" required>
+        </div>
+
+        <div class="input-group">
+            <label>Potassium (K)</label>
+            <input type="number" name="Potassium" required>
+        </div>
+
+        <div class="input-group">
+            <label>Temperature (°C)</label>
+            <input type="number" step="0.1" name="Temperature" required>
+        </div>
+
+        <div class="input-group">
+            <label>Humidity (%)</label>
+            <input type="number" step="0.1" name="Humidity" required>
+        </div>
+
+        <div class="input-group">
+            <label>pH Value</label>
+            <input type="number" step="0.1" name="Ph" required>
+        </div>
+
+        <div class="input-group full-width">
+            <label>Rainfall (mm)</label>
+            <input type="number" step="0.1" name="Rainfall" required>
+        </div>
+
+    </div>
+
+    <button class="predict-btn">
+
+        <i class="fas fa-seedling"></i>
+
+        Predict Crop
+
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

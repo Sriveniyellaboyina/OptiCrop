@@ -1,0 +1,253 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--================ HERO =================-->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <!-- LEFT -->
+
+        <div class="hero-left">
+
+            <span class="hero-badge">
+
+                🌿 AI Powered Agriculture
+
+            </span>
+
+            <h1>
+
+                Smart Agriculture
+
+                <span>Production Optimization Engine</span>
+
+            </h1>
+
+            <p>
+
+                OptiCrop AI helps farmers choose the most suitable crop
+                by analyzing soil nutrients, temperature, humidity,
+                rainfall and environmental conditions using Machine Learning.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="/predict_page" class="btn-main">
+
+                    Find Your Crop
+
+                </a>
+
+                <a href="/about" class="btn-outline">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="hero-right">
+
+            <img src="{{ url_for('static', filename='images/hero.jpg') }}"
+                 alt="Hero Image">
+
+            <div class="hero-card">
+
+                <h3>AI Prediction</h3>
+
+                <p>
+
+                    Predict the best crop using intelligent analysis.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ STATISTICS =================-->
+
+<section class="stats">
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-database"></i>
+
+            <h2>2200+</h2>
+
+            <p>Database Records</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h2>99.55%</h2>
+
+            <p>Prediction Accuracy</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            <h2>22</h2>
+
+            <p>Crop Types</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h2>AI</h2>
+
+            <p>Machine Learning Powered</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ WHY CHOOSE US =================-->
+
+<section class="features">
+
+    <div class="section-title">
+
+        <span>WHY CHOOSE US</span>
+
+        <h2>Smart Agriculture Meets Artificial Intelligence</h2>
+
+        <p>
+
+            OptiCrop AI combines Machine Learning with agricultural
+            knowledge to help farmers make better crop decisions.
+
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-seedling"></i>
+
+            </div>
+
+            <h3>Smart Crop Recommendation</h3>
+
+            <p>
+
+                Recommends the most suitable crop based on soil nutrients,
+                rainfall, humidity and temperature.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-brain"></i>
+
+            </div>
+
+            <h3>Machine Learning Model</h3>
+
+            <p>
+
+                Uses trained machine learning algorithms to provide
+                accurate crop prediction.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-leaf"></i>
+
+            </div>
+
+            <h3>Sustainable Farming</h3>
+
+            <p>
+
+                Helps improve productivity while encouraging efficient
+                use of natural resources.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ CALL TO ACTION =================-->
+
+<section class="cta">
+
+    <div class="cta-box">
+
+        <div class="cta-left">
+
+            <span>READY TO START?</span>
+
+            <h2>
+
+                Find the Best Crop for Your Farm
+
+            </h2>
+
+            <p>
+
+                Enter your soil nutrients and environmental conditions
+                to receive an AI-powered crop recommendation in seconds.
+
+            </p>
+
+        </div>
+
+        <div class="cta-right">
+
+            <a href="/predict_page" class="btn-main">
+
+                <i class="fas fa-seedling"></i>
+
+                Predict Crop
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

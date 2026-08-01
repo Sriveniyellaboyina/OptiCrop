@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OptiCrop: Smart Agriculture Production Optimization Engine </title>
+
+    <link rel="icon"
+          href="{{ url_for('static', filename='images/favicon.png') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ NAVBAR ================-->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="/" class="logo">
+
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+
+            <div>
+
+                <h2>OptiCrop </h2>
+
+                <span>AI Smart Agriculture</span>
+
+            </div>
+
+        </a>
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="/"
+                   class="{% if request.path=='/' %}active{% endif %}">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="/about"
+                   class="{% if request.path=='/about' %}active{% endif %}">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="/predict_page"
+                   class="{% if request.path=='/predict_page' %}active{% endif %}">
+                    Predict Crop
+                </a>
+            </li>
+
+        </ul>
+
+        <a href="/predict_page" class="btn-main">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            Find Crop
+
+        </a>
+
+    </nav>
+
+</header>
+
+<!--================ MAIN ================-->
+
+<main>
+
+{% block content %}
+
+{% endblock %}
+
+</main>
+
+<!--================ FOOTER ================-->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <img src="{{ url_for('static', filename='images/logo.png') }}"
+                 class="footer-logo">
+
+            <h3>OptiCrop </h3>
+
+            <p>
+
+                AI Powered Smart Crop Recommendation
+                System for Better Agricultural Decisions.
+
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h4>Navigation</h4>
+
+            <a href="/">Home</a>
+
+            <a href="/about">About</a>
+
+            <a href="/predict_page">Predict Crop</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h4>Technology</h4>
+
+            <p>Python</p>
+
+            <p>Machine Learning</p>
+
+            <p>Flask</p>
+
+            <p>Scikit-Learn</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+       © 2026 OptiCrop | Smart Agricultural Production Optimization Engine
+
+    </div>
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

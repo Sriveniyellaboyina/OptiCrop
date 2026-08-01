@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="result-section">
+
+    <div class="result-card">
+
+        <div class="success-icon">
+
+            <i class="fas fa-check-circle"></i>
+
+        </div>
+
+        <span class="result-badge">
+
+            AI Recommendation Complete
+
+        </span>
+
+        <h1>
+
+            Best Crop Recommendation
+
+        </h1>
+
+        <div class="crop-result">
+
+            🌾 {{ prediction }}
+
+        </div>
+
+        <p>
+
+            Based on the soil nutrients and environmental conditions
+            you provided, our Machine Learning model recommends the
+            above crop for better agricultural productivity.
+
+        </p>
+
+        <div class="result-buttons">
+
+            <a href="/predict_page" class="btn-main">
+
+                Predict Again
+
+            </a>
+
+            <a href="/" class="btn-outline">
+
+                Back Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
