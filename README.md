@@ -6,7 +6,9 @@ OptiCrop is a **Machine Learning-based Crop Recommendation System** developed us
 
 ## 🔗 Live Demo
 
-**Deployment URL:** *Add your Render deployment link here after deployment.*
+**Deployment URL:** https://opticrop-9euw.onrender.com/
+
+👉 **[Click here to try OptiCrop Live](https://opticrop-9euw.onrender.com/)**
 
 ---
 
@@ -18,6 +20,7 @@ OptiCrop is a **Machine Learning-based Crop Recommendation System** developed us
 - 📊 Simple and user-friendly interface for entering agricultural data.
 - ⚡ Provides instant crop recommendations with high prediction accuracy.
 - 📱 Clean and responsive design compatible with desktop and mobile devices.
+- ☁️ Deployed and accessible online using Render.
 
 ---
 
@@ -75,7 +78,6 @@ Opti_Crop/
 │   ├── predict.html
 │   └── result.html
 └── .gitignore
-```
 
 ---
 
